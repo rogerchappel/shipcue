@@ -35,6 +35,9 @@ export function validateConfig(config: ShipcueConfig): ShipcueConfig {
   if (config.repos !== undefined && (!Array.isArray(config.repos) || config.repos.some((repo) => !/^[-\w]+\/[-._\w]+$/.test(repo)))) {
     errors.push('repos must be owner/name strings when provided');
   }
+  config.owners = config.owners.map((owner) => owner.trim()).filter(Boolean);
+  config.excludeRepos = config.excludeRepos.map((repo) => repo.trim()).filter(Boolean);
+  if (config.repos) config.repos = config.repos.map((repo) => repo.trim()).filter(Boolean);
   if (!Array.isArray(config.excludeRepos)) errors.push('excludeRepos must be an array');
   if (typeof config.includeForks !== 'boolean') errors.push('includeForks must be boolean');
   if (typeof config.includeArchived !== 'boolean') errors.push('includeArchived must be boolean');
