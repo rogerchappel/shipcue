@@ -43,7 +43,7 @@ export function scoreRepo(repo: RepoSnapshot, policy: ReleasePolicy, now = new D
   } else if (repo.ci.status === 'passing') {
     score += 8;
     reasons.push('CI is passing.');
-  } else if (policy.requirePassingCi && repo.ci.status !== 'passing') {
+  } else if (policy.requirePassingCi) {
     score -= 10;
     reasons.push('CI is missing or unknown while policy requires passing CI.');
   }
