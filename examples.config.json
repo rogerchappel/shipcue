@@ -1,0 +1,11 @@
+{
+  "owners": ["rogerchappel"],
+  "includeForks": false,
+  "includeArchived": false,
+  "excludeRepos": ["rogerchappel/oldarchive"],
+  "releasePolicy": {
+    "maxDaysSinceRelease": 30,
+    "minCommitsSinceRelease": 3,
+    "requirePassingCi": true
+  }
+}
