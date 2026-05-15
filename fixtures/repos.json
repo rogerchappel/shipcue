@@ -1,0 +1,131 @@
+{
+  "repos": [
+    {
+      "owner": "rogerchappel",
+      "name": "firstflight",
+      "fullName": "rogerchappel/firstflight",
+      "url": "https://github.com/rogerchappel/firstflight",
+      "description": "No releases yet, but useful commits have landed.",
+      "defaultBranch": "main",
+      "archived": false,
+      "fork": false,
+      "stars": 5,
+      "language": "TypeScript",
+      "pushedAt": "2026-05-14T07:00:00Z",
+      "commitsSinceRelease": [
+        { "sha": "1111111", "message": "feat: add CLI init flow", "date": "2026-05-12T07:00:00Z" },
+        { "sha": "2222222", "message": "docs: write first run guide", "date": "2026-05-13T07:00:00Z" },
+        { "sha": "3333333", "message": "test: cover config validation", "date": "2026-05-14T07:00:00Z" }
+      ],
+      "mergedPrsSinceRelease": [
+        { "number": 4, "title": "Add CLI init flow", "mergedAt": "2026-05-12T08:00:00Z", "labels": ["feature"] }
+      ],
+      "openBlockers": [],
+      "ci": { "hasWorkflow": true, "status": "passing" },
+      "packageFiles": [{ "path": "package.json", "version": "0.1.0", "kind": "npm" }]
+    },
+    {
+      "owner": "rogerchappel",
+      "name": "freshdeck",
+      "fullName": "rogerchappel/freshdeck",
+      "url": "https://github.com/rogerchappel/freshdeck",
+      "description": "Released yesterday with no changes.",
+      "defaultBranch": "main",
+      "archived": false,
+      "fork": false,
+      "stars": 12,
+      "language": "TypeScript",
+      "pushedAt": "2026-05-14T07:00:00Z",
+      "latestRelease": { "name": "v1.2.3", "tagName": "v1.2.3", "publishedAt": "2026-05-14T00:00:00Z" },
+      "commitsSinceRelease": [],
+      "mergedPrsSinceRelease": [],
+      "openBlockers": [],
+      "ci": { "hasWorkflow": true, "status": "passing" },
+      "packageFiles": [{ "path": "package.json", "version": "1.2.3", "kind": "npm" }]
+    },
+    {
+      "owner": "rogerchappel",
+      "name": "staledock",
+      "fullName": "rogerchappel/staledock",
+      "url": "https://github.com/rogerchappel/staledock",
+      "description": "Ninety days old with lots of unreleased work.",
+      "defaultBranch": "main",
+      "archived": false,
+      "fork": false,
+      "stars": 42,
+      "language": "TypeScript",
+      "pushedAt": "2026-05-12T07:00:00Z",
+      "latestRelease": { "name": "v0.4.0", "tagName": "v0.4.0", "publishedAt": "2026-02-14T00:00:00Z" },
+      "commitsSinceRelease": [
+        { "sha": "aaaaaaa", "message": "feat: add dashboard filters", "date": "2026-03-01T00:00:00Z" },
+        { "sha": "bbbbbbb", "message": "fix: repair markdown output", "date": "2026-03-05T00:00:00Z" },
+        { "sha": "ccccccc", "message": "docs: update examples", "date": "2026-04-01T00:00:00Z" },
+        { "sha": "ddddddd", "message": "test: add smoke fixture", "date": "2026-04-15T00:00:00Z" },
+        { "sha": "eeeeeee", "message": "chore: refresh deps", "date": "2026-05-01T00:00:00Z" }
+      ],
+      "mergedPrsSinceRelease": [
+        { "number": 17, "title": "Add dashboard filters", "mergedAt": "2026-03-01T00:00:00Z", "labels": ["feature"] },
+        { "number": 21, "title": "Fix markdown output", "mergedAt": "2026-03-05T00:00:00Z", "labels": ["bug"] }
+      ],
+      "openBlockers": [],
+      "ci": { "hasWorkflow": true, "status": "passing" },
+      "packageFiles": [{ "path": "package.json", "version": "0.4.0", "kind": "npm" }]
+    },
+    {
+      "owner": "rogerchappel",
+      "name": "redci",
+      "fullName": "rogerchappel/redci",
+      "url": "https://github.com/rogerchappel/redci",
+      "description": "Has commits but CI is failing.",
+      "defaultBranch": "main",
+      "archived": false,
+      "fork": false,
+      "stars": 9,
+      "language": "TypeScript",
+      "pushedAt": "2026-05-10T07:00:00Z",
+      "latestRelease": { "name": "v0.2.0", "tagName": "v0.2.0", "publishedAt": "2026-04-01T00:00:00Z" },
+      "commitsSinceRelease": [
+        { "sha": "f111111", "message": "fix: harden parser", "date": "2026-04-20T00:00:00Z" },
+        { "sha": "f222222", "message": "feat: add json output", "date": "2026-04-25T00:00:00Z" },
+        { "sha": "f333333", "message": "test: expose failing case", "date": "2026-05-10T00:00:00Z" }
+      ],
+      "mergedPrsSinceRelease": [{ "number": 9, "title": "Add json output", "mergedAt": "2026-04-25T00:00:00Z", "labels": ["feature"] }],
+      "openBlockers": [{ "number": 12, "title": "Release blocker: parser regression", "labels": ["release-blocker"] }],
+      "ci": { "hasWorkflow": true, "status": "failing" },
+      "packageFiles": [{ "path": "package.json", "version": "0.2.0", "kind": "npm" }]
+    },
+    {
+      "owner": "rogerchappel",
+      "name": "oldarchive",
+      "fullName": "rogerchappel/oldarchive",
+      "url": "https://github.com/rogerchappel/oldarchive",
+      "defaultBranch": "main",
+      "archived": true,
+      "fork": false,
+      "stars": 1,
+      "language": "JavaScript",
+      "latestRelease": { "name": "v0.1.0", "tagName": "v0.1.0", "publishedAt": "2025-01-01T00:00:00Z" },
+      "commitsSinceRelease": [],
+      "mergedPrsSinceRelease": [],
+      "openBlockers": [],
+      "ci": { "hasWorkflow": false, "status": "missing" },
+      "packageFiles": []
+    },
+    {
+      "owner": "rogerchappel",
+      "name": "forkwatch",
+      "fullName": "rogerchappel/forkwatch",
+      "url": "https://github.com/rogerchappel/forkwatch",
+      "defaultBranch": "main",
+      "archived": false,
+      "fork": true,
+      "stars": 0,
+      "language": "Go",
+      "commitsSinceRelease": [],
+      "mergedPrsSinceRelease": [],
+      "openBlockers": [],
+      "ci": { "hasWorkflow": false, "status": "missing" },
+      "packageFiles": []
+    }
+  ]
+}
