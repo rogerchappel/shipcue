@@ -118,5 +118,6 @@ bash scripts/validate.sh
 - GitHub REST/GraphQL scanner using official APIs.
 - Dashboard search/sort controls.
 - Raw API payload preservation.
+- See `docs/github-scanner-plan.md` for the safe read-only scanner plan.
 - GitHub Pages publishing recipe for generated static output.
 - Repo-specific policy overrides.
