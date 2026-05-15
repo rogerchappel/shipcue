@@ -1,12 +1,15 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import { renderQueueMarkdown } from './markdown.js';
 import type { ScanResult, ScoredRepo } from './types.js';
 
 export async function buildDashboard(scan: ScanResult, outDir: string): Promise<void> {
   await mkdir(outDir, { recursive: true });
   await writeFile(path.join(outDir, 'index.html'), renderDashboard(scan));
   await writeFile(path.join(outDir, 'shipcue.json'), `${JSON.stringify(scan, null, 2)}\n`);
+  await writeFile(path.join(outDir, 'queue.md'), renderQueueMarkdown(scan));
 }
+
 
 export function renderDashboard(scan: ScanResult): string {
   const cards = scan.repos.map(renderRepoCard).join('\n');
