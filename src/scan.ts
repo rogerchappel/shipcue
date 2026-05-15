@@ -31,4 +31,6 @@ export async function writeScanResult(result: ScanResult, outDir: string): Promi
   await mkdir(outDir, { recursive: true });
   await writeFile(path.join(outDir, 'shipcue-scan.json'), `${JSON.stringify(result, null, 2)}\n`);
   await writeFile(path.join(outDir, 'repos.json'), `${JSON.stringify(result.repos, null, 2)}\n`);
+  await writeFile(path.join(outDir, 'summary.json'), `${JSON.stringify({ generatedAt: result.generatedAt, source: result.source, repoCount: result.repos.length, ready: result.repos.filter((repo) => repo.readinessBand === 'ready').length, hold: result.repos.filter((repo) => repo.readinessBand === 'hold').length }, null, 2)}\n`);
 }
+
