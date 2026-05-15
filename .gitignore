@@ -1,0 +1,8 @@
+node_modules/
+dist/
+coverage/
+.shipcue/
+data/latest/
+briefs/
+.DS_Store
+*.tgz
