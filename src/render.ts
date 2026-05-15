@@ -21,7 +21,7 @@ export function renderDashboard(scan: ScanResult): string {
     body{margin:0;padding:2rem;background:Canvas;color:CanvasText}.wrap{max-width:1120px;margin:auto}header{display:flex;justify-content:space-between;gap:1rem;align-items:end;border-bottom:1px solid #d0d7de;padding-bottom:1rem}h1{margin:.1rem 0;font-size:2.2rem}.tagline{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-top:1.5rem}.card{border:1px solid #d0d7de;border-radius:16px;background:var(--card);padding:1rem}.score{font-size:2rem;font-weight:800}.ready{color:var(--ok)}.watch{color:var(--warn)}.hold,.manual-review{color:var(--bad)}.meta{color:var(--muted);font-size:.92rem}.pill{display:inline-block;border:1px solid #d0d7de;border-radius:999px;padding:.2rem .55rem;margin:.15rem;background:Canvas}.reason{margin:.35rem 0}.repo{font-weight:800;font-size:1.1rem}a{color:inherit}</style>
 </head>
 <body><main class="wrap">
-  <header><div><p class="tagline">local-first release readiness radar</p><h1>shipcue</h1><p>Generated ${escapeHtml(scan.generatedAt)} from ${escapeHtml(scan.source)} data.</p></div><div><strong>${scan.repos.length}</strong> repos scanned</div></header>
+  <header><div><p class="tagline">local-first release readiness radar</p><h1>shipcue</h1><p>Generated ${escapeHtml(scan.generatedAt)} from ${escapeHtml(scan.source)} data.</p></div><div><strong>${scan.repos.length}</strong> repos scanned<br><span class="meta">${scan.repos.filter((repo) => repo.readinessBand === 'ready').length} ready · ${scan.repos.filter((repo) => repo.readinessBand === 'hold').length} held</span></div></header>
   <section class="grid">${cards}</section>
 </main></body></html>`;
 }
