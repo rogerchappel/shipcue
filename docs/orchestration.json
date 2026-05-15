@@ -3,8 +3,8 @@
   "version": 1,
   "commands": [
     { "name": "init", "writes": ["shipcue.config.json"], "network": false },
-    { "name": "scan", "fixtureFlag": "--fixture", "writes": ["data/latest/shipcue-scan.json", "data/latest/repos.json"], "network": false },
-    { "name": "build", "writes": ["dist-site/index.html", "dist-site/shipcue.json"], "network": false },
+    { "name": "scan", "fixtureFlag": "--fixture", "writes": ["data/latest/shipcue-scan.json", "data/latest/repos.json", "data/latest/summary.json"], "network": false },
+    { "name": "build", "writes": ["dist-site/index.html", "dist-site/shipcue.json", "dist-site/queue.md"], "network": false },
     { "name": "brief", "writes": ["briefs/*.md"], "network": false },
     { "name": "agent-prompt", "writes": [], "network": false }
   ],
