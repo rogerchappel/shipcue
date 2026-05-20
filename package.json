@@ -12,7 +12,9 @@
   },
   "files": [
     "dist",
+    "docs",
     "fixtures",
+    "scripts",
     "README.md",
     "LICENSE"
   ],
