@@ -42,5 +42,13 @@
   "devDependencies": {
     "@types/node": "^24.0.0",
     "typescript": "^5.8.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerchappel/shipcue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rogerchappel/shipcue/issues"
+  },
+  "homepage": "https://github.com/rogerchappel/shipcue#readme"
 }
