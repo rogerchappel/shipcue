@@ -121,3 +121,9 @@ bash scripts/validate.sh
 - See `docs/github-scanner-plan.md` for the safe read-only scanner plan.
 - GitHub Pages publishing recipe for generated static output.
 - Repo-specific policy overrides.
+
+
+## Release readiness
+
+Use [docs/release-readiness.md](docs/release-readiness.md) before opening release PRs or tagging a release.
+
